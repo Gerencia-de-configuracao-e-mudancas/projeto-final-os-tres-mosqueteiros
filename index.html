@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja de Roupas</title>
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="./index.html" class="logo">Minha Loja</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="./index.html" data-page="home" class="active">Início</a></li>
+                <li><a href="./blusas.html" data-page="blusas">Blusas</a></li>
+                <li><a href="./shorts.html" data-page="shorts">Shorts</a></li>
+                <li><a href="./tenis.html" data-page="tenis">Tênis</a></li>
+            </ul>
+        </nav>
+        <!-- Elemento de espaço para balancear a logo e centralizar a navegação -->
+        <div class="nav-placeholder"></div>
+    </header>
+
+    <main class="main-content">
+
+
+        <!-- Conteúdo da página inicial (Home) -->
+        <div id="home-content" class="home-content">
+
+            <p>Descubra as últimas tendências da moda com nossa coleção exclusiva de roupas. Encontre o estilo perfeito
+                para cada ocasião, com qualidade e preços que você vai amar. Navegue pelas nossas categorias e renove
+                seu guarda-roupa hoje mesmo!</p>
+        </div>
+
+        <!-- Cards de produtos serão injetados aqui pelo JavaScript -->
+        <div id="product-list" class="product-grid hidden">
+        </div>
+    </main>
+
+    <!-- Link para o arquivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
