@@ -22,10 +22,6 @@
             </ul>
         </nav>
         <div class="header-actions">
-            <div class="action-icon favorite-icon-header">
-                <span class="icon">♥</span>
-                <span class="favorite-count">0</span>
-            </div>
             <div class="action-icon cart-icon">
                 <span class="icon">🛒</span>
                 <span class="cart-count">0</span>
@@ -70,6 +66,48 @@
         <div id="product-list" class="product-grid hidden">
         </div>
     </main>
+
+    <!-- Modal do Carrinho -->
+    <div id="cart-modal" class="cart-modal hidden">
+        <div class="cart-modal-overlay"></div>
+        <div class="cart-modal-content">
+            <div class="cart-header">
+                <h2 class="cart-title">
+                    <span class="cart-icon-title">🛒</span>
+                    Meu Carrinho
+                </h2>
+                <button class="cart-close" id="cart-close">
+                    <span>&times;</span>
+                </button>
+            </div>
+            
+            <div class="cart-body">
+                <div id="cart-items" class="cart-items">
+                    <!-- Itens do carrinho serão inseridos aqui -->
+                </div>
+                
+                <div id="cart-empty" class="cart-empty hidden">
+                    <div class="empty-cart-icon">🛒</div>
+                    <h3>Seu carrinho está vazio</h3>
+                    <p>Adicione alguns produtos incríveis à sua coleção!</p>
+                    <button class="btn btn-primary" id="continue-shopping">Continuar Comprando</button>
+                </div>
+            </div>
+            
+            <div class="cart-footer">
+                <div class="cart-summary">
+                    <div class="cart-total">
+                        <span class="total-label">Total:</span>
+                        <span class="total-value" id="cart-total">R$ 0,00</span>
+                    </div>
+                    <div class="cart-actions">
+                        <button class="btn btn-secondary" id="clear-cart">Limpar Carrinho</button>
+                        <button class="btn btn-primary" id="checkout-btn">Finalizar Compra</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Link para o arquivo JavaScript -->
     <script src="script.js"></script>
