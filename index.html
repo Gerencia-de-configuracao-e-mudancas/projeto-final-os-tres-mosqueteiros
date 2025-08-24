@@ -21,20 +21,50 @@
                 <li><a href="./tenis.html" data-page="tenis">Tênis</a></li>
             </ul>
         </nav>
-        <!-- Elemento de espaço para balancear a logo e centralizar a navegação -->
-        <div class="nav-placeholder"></div>
+        <div class="header-actions">
+            <div class="action-icon favorite-icon-header">
+                <span class="icon">♥</span>
+                <span class="favorite-count">0</span>
+            </div>
+            <div class="action-icon cart-icon">
+                <span class="icon">🛒</span>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
     </header>
 
-    <main class="main-content">
-
-
-        <!-- Conteúdo da página inicial (Home) -->
-        <div id="home-content" class="home-content">
-
-            <p>Descubra as últimas tendências da moda com nossa coleção exclusiva de roupas. Encontre o estilo perfeito
-                para cada ocasião, com qualidade e preços que você vai amar. Navegue pelas nossas categorias e renove
-                seu guarda-roupa hoje mesmo!</p>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-background">
+            <img src="./img/imagem-home.jpg" alt="Mulher elegante caminhando em campo dourado" class="hero-image">
+            <div class="hero-overlay"></div>
         </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Elegância Natural</h1>
+                <p class="hero-subtitle">Descubra o equilíbrio perfeito entre sofisticação e liberdade. Nossa coleção celebra a beleza da simplicidade e a elegância atemporal.</p>
+                <div class="hero-buttons">
+                    <a href="#produtos" class="btn btn-primary">Explorar Coleção</a>
+                    <a href="#sobre" class="btn btn-secondary">Nossa História</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <main class="main-content" id="produtos">
+
+        <!-- Seção Sobre -->
+        <section class="about-section" id="sobre">
+            <div class="about-content">
+                <h2 class="section-title">Nossa Filosofia</h2>
+                <p class="about-text">Descubra as últimas tendências da moda com nossa coleção exclusiva de roupas. Encontre o estilo perfeito
+                    para cada ocasião, com qualidade e preços que você vai amar. Navegue pelas nossas categorias e renove
+                    seu guarda-roupa hoje mesmo!</p>
+            </div>
+        </section>
 
         <!-- Cards de produtos serão injetados aqui pelo JavaScript -->
         <div id="product-list" class="product-grid hidden">
