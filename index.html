@@ -21,25 +21,93 @@
                 <li><a href="./tenis.html" data-page="tenis">Tênis</a></li>
             </ul>
         </nav>
-        <!-- Elemento de espaço para balancear a logo e centralizar a navegação -->
-        <div class="nav-placeholder"></div>
+        <div class="header-actions">
+            <div class="action-icon cart-icon">
+                <span class="icon">🛒</span>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
     </header>
 
-    <main class="main-content">
-
-
-        <!-- Conteúdo da página inicial (Home) -->
-        <div id="home-content" class="home-content">
-
-            <p>Descubra as últimas tendências da moda com nossa coleção exclusiva de roupas. Encontre o estilo perfeito
-                para cada ocasião, com qualidade e preços que você vai amar. Navegue pelas nossas categorias e renove
-                seu guarda-roupa hoje mesmo!</p>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-background">
+            <img src="./img/imagem-home.jpg" alt="Mulher elegante caminhando em campo dourado" class="hero-image">
+            <div class="hero-overlay"></div>
         </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Elegância Natural</h1>
+                <p class="hero-subtitle">Descubra o equilíbrio perfeito entre sofisticação e liberdade. Nossa coleção celebra a beleza da simplicidade e a elegância atemporal.</p>
+                <div class="hero-buttons">
+                    <a href="#produtos" class="btn btn-primary">Explorar Coleção</a>
+                    <a href="#sobre" class="btn btn-secondary">Nossa História</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <main class="main-content" id="produtos">
+
+        <!-- Seção Sobre -->
+        <section class="about-section" id="sobre">
+            <div class="about-content">
+                <h2 class="section-title">Nossa Filosofia</h2>
+                <p class="about-text">Descubra as últimas tendências da moda com nossa coleção exclusiva de roupas. Encontre o estilo perfeito
+                    para cada ocasião, com qualidade e preços que você vai amar. Navegue pelas nossas categorias e renove
+                    seu guarda-roupa hoje mesmo!</p>
+            </div>
+        </section>
 
         <!-- Cards de produtos serão injetados aqui pelo JavaScript -->
         <div id="product-list" class="product-grid hidden">
         </div>
     </main>
+
+    <!-- Modal do Carrinho -->
+    <div id="cart-modal" class="cart-modal hidden">
+        <div class="cart-modal-overlay"></div>
+        <div class="cart-modal-content">
+            <div class="cart-header">
+                <h2 class="cart-title">
+                    <span class="cart-icon-title">🛒</span>
+                    Meu Carrinho
+                </h2>
+                <button class="cart-close" id="cart-close">
+                    <span>&times;</span>
+                </button>
+            </div>
+            
+            <div class="cart-body">
+                <div id="cart-items" class="cart-items">
+                    <!-- Itens do carrinho serão inseridos aqui -->
+                </div>
+                
+                <div id="cart-empty" class="cart-empty hidden">
+                    <div class="empty-cart-icon">🛒</div>
+                    <h3>Seu carrinho está vazio</h3>
+                    <p>Adicione alguns produtos incríveis à sua coleção!</p>
+                    <button class="btn btn-primary" id="continue-shopping">Continuar Comprando</button>
+                </div>
+            </div>
+            
+            <div class="cart-footer">
+                <div class="cart-summary">
+                    <div class="cart-total">
+                        <span class="total-label">Total:</span>
+                        <span class="total-value" id="cart-total">R$ 0,00</span>
+                    </div>
+                    <div class="cart-actions">
+                        <button class="btn btn-secondary" id="clear-cart">Limpar Carrinho</button>
+                        <button class="btn btn-primary" id="checkout-btn">Finalizar Compra</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Link para o arquivo JavaScript -->
     <script src="script.js"></script>
