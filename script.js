@@ -7,25 +7,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // Dados dos produtos, organizados por categoria
     const products = {
         blusas: [
-            { id: 'blusa1', name: 'Blusa de Verão Floral', price: 'R$ 69,90', image: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80', badge: 'Novo' },
-            { id: 'blusa2', name: 'Blusa Casual Listrada', price: 'R$ 55,50', image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80', badge: 'Popular' },
-            { id: 'blusa3', name: 'Blusa Básica de Malha', price: 'R$ 49,90', image: 'https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80' },
-            { id: 'blusa4', name: 'Blusa de Manga Longa', price: 'R$ 79,90', image: 'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80', badge: 'Tendência' },
-            { id: 'blusa5', name: 'Blusa com Estampa Geométrica', price: 'R$ 85,00', image: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80', badge: 'Exclusivo' }
+            { id: 'blusa1', name: 'Blusa de Verão Floral', price: 'R$ 69,90', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNHID4TJC2Flb6MH0OxaGVKCGnMmNmIe6N2g&s'},
+            { id: 'blusa2', name: 'Blusa Casual Listrada', price: 'R$ 55,50', image: 'https://cf.shopee.com.br/file/br-11134207-7r98o-m1vha7qvkywa8d'},
+            { id: 'blusa3', name: 'Blusa Básica de Malha', price: 'R$ 49,90', image:'https://images.tcdn.com.br/img/img_prod/845558/blusa_feminina_malha_canelada_regata_cinza_melina_2413_1_6846106f2f9237333672a65b678eed34.jpg'},
+            { id: 'blusa4', name: 'Blusa de Manga Longa', price: 'R$ 79,90', image: 'https://trilo.com.br/wp-content/uploads/2024/04/bc95be149e1c953389226b406ee15f2d.jpg'},
+            { id: 'blusa5', name: 'Blusa com Estampa Geométrica', price: 'R$ 85,00', image: 'https://static.eliani.com.br/public/eliani/imagens/produtos/blusa-manga-longa-meia-tunica-estampa-geometrica-9418.jpg'}
         ],
         shorts: [
-            { id: 'short1', name: 'Short Jeans Casual', price: 'R$ 99,90', image: 'https://images.unsplash.com/photo-1565084888279-aca607ecce0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80', badge: 'Mais Vendido' },
-            { id: 'short2', name: 'Short Esportivo de Linho', price: 'R$ 75,00', image: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80' },
-            { id: 'short3', name: 'Short de Praia com Estampa', price: 'R$ 65,00', image: 'https://images.unsplash.com/photo-1541840031508-326b77c9a17e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80', badge: 'Verão' },
-            { id: 'short4', name: 'Short de Alfaiataria', price: 'R$ 110,00', image: 'https://images.unsplash.com/photo-1506629905607-d405b56b0d45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80', badge: 'Elegante' },
-            { id: 'short5', name: 'Short Saia para Academia', price: 'R$ 89,90', image: 'https://images.unsplash.com/photo-1506629905607-d405b56b0d45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80', badge: 'Fitness' }
+            { id: 'short1', name: 'Short Jeans Casual', price: 'R$ 99,90', image:'https://lojaviego.com.br/cdn/shop/files/Bermuda_Jeans_Masculina_Rasgado_Reveillon_loja_viego_2__1_11zon.webp?v=1719351836 ' },
+            { id: 'short2', name: 'Short Esportivo de Linho', price: 'R$ 75,00', image:'https://down-br.img.susercontent.com/file/br-11134201-23010-vbdog6k08kmv2e'},
+            { id: 'short3', name: 'Short de Praia com Estampa', price: 'R$ 65,00', image: 'https://static.dafiti.com.br/p/Vicbela-Short-Curto-Feminino-Estampado-Prote%C3%A7%C3%A3o-Uv-50+-Moda-Sa%C3%ADda-de-Praia-Vicbela-Folha-8268-51983931-1-zoom.jpg'},
+            { id: 'short4', name: 'Short de Alfaiataria', price: 'R$ 110,00', image: 'https://static.ecosweb.com.br/public/produtos/moda-feminina/shorts-social/short-marrom-amendoado-em-alfaiataria_368499_600_1.jpg'},
+            { id: 'short5', name: 'Short Saia para Academia', price: 'R$ 89,90', image: 'https://m.media-amazon.com/images/I/41PPsBY+HlL._SY1000_.jpg'}
         ],
         tenis: [
-            { id: 'tenis1', name: 'Tênis de Corrida Leve', price: 'R$ 250,00', image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80', badge: 'Performance' },
-            { id: 'tenis2', name: 'Tênis Casual Branco', price: 'R$ 180,00', image: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80', badge: 'Clássico' },
-            { id: 'tenis3', name: 'Tênis de Cano Alto Urbano', price: 'R$ 210,00', image: 'https://images.unsplash.com/photo-1552346154-21d32810aba3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80', badge: 'Street' },
-            { id: 'tenis4', name: 'Tênis Esportivo Amortecedor', price: 'R$ 320,00', image: 'https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80', badge: 'Premium' },
-            { id: 'tenis5', name: 'Tênis de Couro Marrom', price: 'R$ 299,00', image: 'https://images.unsplash.com/photo-1544966503-7cc5ac882d5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80', badge: 'Sofisticado' }
+            { id: 'tenis1', name: 'Tênis de Corrida Leve', price: 'R$ 250,00', image: 'https://underarmourbr.vtexassets.com/arquivos/ids/317870-800-800?v=638247605581430000&width=800&height=800&aspect=true'},
+            { id: 'tenis2', name: 'Tênis Casual Branco', price: 'R$ 180,00', image: 'https://img.lojasrenner.com.br/item/927863928/original/3.jpg'},
+            { id: 'tenis3', name: 'Tênis de Cano Alto Urbano', price: 'R$ 210,00', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGTIx-1hYChoO02bRua8Z4zDPYI0z-mHIcAg&s' },
+            { id: 'tenis4', name: 'Tênis Esportivo Amortecedor', price: 'R$ 320,00', image: 'https://cdn.dooca.store/117333/products/design-sem-nome-2023-07-21t135438280.png?v=1689958514'},
+            { id: 'tenis5', name: 'Tênis de Couro Marrom', price: 'R$ 299,00', image: 'https://img.irroba.com.br/fit-in/800x800/filters:fill(fff):quality(80)/lojalaro/catalog/humanizadas-jorge-secco/04-js-connect-07324-3260-marrom-foto-02-00.jpg'}
         ]
     };
 
